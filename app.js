@@ -189,6 +189,34 @@ const app = new Vue({
         
         ]
 
+    },
+
+    methods: {
+      
+        prevCard: function(){
+            if (this.currentIndex > 0) {
+
+                this.currentIndex --
+
+            } else {
+
+                this.currentIndex = this.arrayCards.length -1
+
+            }
+        },
+
+        nextCard: function(){
+
+            if (this.currentIndex < this.arrayCards.length -1) {
+
+                this.currentIndex ++
+
+            } else {
+                
+                this.currentIndex = 0
+
+            }
+        }
     }
 
 })
