@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-10 p-0">
                     <div class="ms_image_wrapper">
-                        <div :class="activeBox" v-for="card in arrayCards">
+                        <div :class="notActiveBox" v-for="card in arrayCards">
                             <img :src="card.items" alt="">
                             <div class="ms_description p-2">
                                 <h2>{{card.title}}</h2>
@@ -28,6 +28,7 @@
                 </div>
                 <div class="col-2 ms_preview_wrapper p-0">
                     <ul class="ms_preview_list d-flex flex-column list-unstyled m-0">
+                        <li :class="activeBorder" v-for="card in arrayCards"><img :src="card.items" alt=""></li>
                     </ul>
                     <div class="ms_preview_wrapper_buttons d-flex flex-column justify-content-between align-items-center fs-3 p-2">
                         <div class="ms_prev_button">
