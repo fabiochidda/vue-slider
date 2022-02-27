@@ -154,6 +154,7 @@ const app = new Vue({
         notActiveBox: "item",
         activeBox: "ms_active",
         activeBorder: "ms_border_active",
+        currentIndex: 0,
         arrayCards: [
 
             {
